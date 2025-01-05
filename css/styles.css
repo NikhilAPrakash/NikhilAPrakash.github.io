@@ -544,8 +544,9 @@ footer {
 }
 
 .project-image {
-    float: left;
-    max-width: 50vw
+    width: 100%;  /* This makes sure it fills the container */
+    height: auto; /* Maintains the aspect ratio */
+    max-width: 50vw;
 }
 
 .project-info {
