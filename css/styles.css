@@ -537,7 +537,7 @@ footer {
 .project {
     justify-content: space-between;
     position: relative;
-    max-width: 900px;
+    max-width: auto;
     margin: 0 auto 30px auto;
     background: #fff;
     border-radius: 4px;
