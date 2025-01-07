@@ -535,7 +535,7 @@ footer {
 }
 
 .project {
-    justify-content: space-between;
+    /* justify-content: space-between;
     position: relative;
     max-width: auto;
     margin: 0 auto 30px auto;
@@ -543,23 +543,37 @@ footer {
     border-radius: 4px;
     display: flex;
     align-items: center;
+    padding: 20px; */
+    display: flex;
+    align-items: center; /* Centers the items vertically */
+    justify-content: space-between; /* Distributes space between items */
     padding: 20px;
+    border-radius: 4px;
+    background: #fff;
+    margin-bottom: 30px;
 }
 
 .project-image {
-    flex: 1;
+    /* flex: 1;
     float: left;
     width: 100%;
     height: auto;
-    max-width: 45%;
+    max-width: 45%; */
+    flex: 1; /* Allows the image to grow */
+    width: 100%;
+    max-width: 45%; /* Sets a max-width to the image */
+    height: auto; /* Keeps image aspect ratio */
+    object-fit: cover;
 }
 
 .project-info {
-    flex: 2;
+    /* flex: 2;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     margin-left: 300px;
+    padding: 15px; */
+    flex: 2; /* Allows the info section to take twice the space of the image */
     padding: 15px;
 }
 
@@ -844,7 +858,7 @@ footer {
         float: none
     }
 
-    .project-image {
+    /* .project-image {
         display: none
     }
 
@@ -854,6 +868,14 @@ footer {
         padding: 30px 15px;
         top: auto;
         transform: none
+    } */
+    .project {
+        flex-direction: column; /* Stacks the items vertically on smaller screens */
+    }
+
+    .project-image, .project-info {
+        max-width: 100%; /* Allows each section to expand to full width */
+        flex: none; /* Overrides the flex settings for mobile */
     }
 
     footer {
