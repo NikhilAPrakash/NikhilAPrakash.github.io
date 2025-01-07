@@ -577,6 +577,24 @@ footer {
     padding: 15px;
 }
 
+.project-links a {
+    display: block; /* Makes each link appear on a new line */
+    text-decoration: none; /* Removes underline from links */
+    color: #3498db; /* Stylish blue color for links */
+    font-weight: bold; /* Makes the font bold */
+    margin-bottom: 10px; /* Adds spacing between the links */
+    transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+.project-links a:last-child {
+    margin-bottom: 0; /* Removes the bottom margin from the last link */
+}
+
+.project-links a:hover {
+    color: #217dbb; /* Darker blue on hover for better visibility */
+    text-decoration: underline; /* Adds underline on hover */
+}
+
 .project-info h3 {
     font-size: 1.5em;
     font-weight: 300;
